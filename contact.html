@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - TechFlow</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-lightning-fill text-primary me-2"></i>TechFlow
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="contact-hero bg-gradient-primary text-white py-5">
+        <div class="container">
+            <div class="row align-items-center min-vh-50">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">Get In Touch</h1>
+                    <p class="lead mb-4">
+                        Ready to transform your business? Let's discuss how we can help 
+                        you achieve your technology goals.
+                    </p>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <i class="bi bi-envelope-fill" style="font-size: 12rem; opacity: 0.2;"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-5">
+                            <h3 class="card-title mb-4">Send us a message</h3>
+                            <form id="contactForm">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="firstName" class="form-label">First Name</label>
+                                        <input type="text" class="form-control" id="firstName" required>
+                                        <div class="invalid-feedback">
+                                            Please provide a valid first name.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="lastName" class="form-label">Last Name</label>
+                                        <input type="text" class="form-control" id="lastName" required>
+                                        <div class="invalid-feedback">
+                                            Please provide a valid last name.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                        <div class="invalid-feedback">
+                                            Please provide a valid email address.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="phone" class="form-label">Phone Number</label>
+                                        <input type="tel" class="form-control" id="phone">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="company" class="form-label">Company</label>
+                                        <input type="text" class="form-control" id="company">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="service" class="form-label">Service Interest</label>
+                                        <select class="form-select" id="service" required>
+                                            <option value="">Choose a service...</option>
+                                            <option value="cloud">Cloud Solutions</option>
+                                            <option value="development">Custom Development</option>
+                                            <option value="analytics">Data Analytics</option>
+                                            <option value="security">Cybersecurity</option>
+                                            <option value="consulting">IT Consulting</option>
+                                            <option value="support">Support & Maintenance</option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            Please select a service.
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="budget" class="form-label">Project Budget</label>
+                                        <select class="form-select" id="budget">
+                                            <option value="">Select budget range...</option>
+                                            <option value="under-10k">Under $10,000</option>
+                                            <option value="10k-50k">$10,000 - $50,000</option>
+                                            <option value="50k-100k">$50,000 - $100,000</option>
+                                            <option value="over-100k">Over $100,000</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="message" class="form-label">Message</label>
+                                        <textarea class="form-control" id="message" rows="5" required 
+                                                  placeholder="Tell us about your project requirements..."></textarea>
+                                        <div class="invalid-feedback">
+                                            Please provide a message.
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="newsletter">
+                                            <label class="form-check-label" for="newsletter">
+                                                Subscribe to our newsletter for updates and insights
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary btn-lg px-5">
+                                            <i class="bi bi-send me-2"></i>Send Message
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="sticky-top" style="top: 100px;">
+                        <!-- Contact Info -->
+                        <div class="card border-0 shadow-sm mb-4">
+                            <div class="card-body p-4">
+                                <h5 class="card-title mb-4">Contact Information</h5>
+                                <div class="d-flex mb-3">
+                                    <div class="contact-icon bg-primary bg-gradient rounded-circle me-3 d-flex align-items-center justify-content-center">
+                                        <i class="bi bi-geo-alt text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-1">Address</h6>
+                                        <p class="text-muted mb-0">123 Tech Street<br>San Francisco, CA 94105</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <div class="contact-icon bg-success bg-gradient rounded-circle me-3 d-flex align-items-center justify-content-center">
+                                        <i class="bi bi-telephone text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-1">Phone</h6>
+                                        <p class="text-muted mb-0">+1 (555) 123-4567</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <div class="contact-icon bg-info bg-gradient rounded-circle me-3 d-flex align-items-center justify-content-center">
+                                        <i class="bi bi-envelope text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-1">Email</h6>
+                                        <p class="text-muted mb-0">hello@techflow.com</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <div class="contact-icon bg-warning bg-gradient rounded-circle me-3 d-flex align-items-center justify-content-center">
+                                        <i class="bi bi-clock text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-1">Business Hours</h6>
+                                        <p class="text-muted mb-0">Mon - Fri: 9:00 AM - 6:00 PM</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Quick Links -->
+                        <div class="card border-0 shadow-sm mb-4">
+                            <div class="card-body p-4">
+                                <h5 class="card-title mb-4">Quick Links</h5>
+                                <div class="d-grid gap-2">
+                                    <a href="about.html" class="btn btn-outline-primary">
+                                        <i class="bi bi-info-circle me-2"></i>Learn About Us
+                                    </a>
+                                    <a href="#" class="btn btn-outline-success">
+                                        <i class="bi bi-calendar me-2"></i>Schedule a Call
+                                    </a>
+                                    <a href="#" class="btn btn-outline-info">
+                                        <i class="bi bi-file-text me-2"></i>Request a Quote
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Follow Us -->
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body p-4 text-center">
+                                <h5 class="card-title mb-4">Follow Us</h5>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a href="#" class="btn btn-outline-primary rounded-circle p-2">
+                                        <i class="bi bi-twitter"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-outline-primary rounded-circle p-2">
+                                        <i class="bi bi-linkedin"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-outline-primary rounded-circle p-2">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-outline-primary rounded-circle p-2">
+                                        <i class="bi bi-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-0">
+                            <div class="map-placeholder bg-secondary d-flex align-items-center justify-content-center text-white" style="height: 300px;">
+                                <div class="text-center">
+                                    <i class="bi bi-geo-alt-fill mb-3" style="font-size: 3rem;"></i>
+                                    <h5>Interactive Map</h5>
+                                    <p class="mb-0">Visit us at our San Francisco office</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">
+                        <i class="bi bi-lightning-fill text-primary me-2"></i>TechFlow
+                    </h5>
+                    <p class="text-white-50">
+                        Transforming businesses through innovative technology solutions 
+                        and exceptional service delivery.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white-50 hover-primary">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a href="#" class="text-white-50 hover-primary">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="#" class="text-white-50 hover-primary">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h6 class="fw-bold mb-3">Company</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-white-50 text-decoration-none hover-primary">About</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none hover-primary">Services</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none hover-primary">Team</a></li>
+                        <li><a href="contact.html" class="text-white-50 text-decoration-none hover-primary">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h6 class="fw-bold mb-3">Resources</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50 text-decoration-none hover-primary">Blog</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none hover-primary">Documentation</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none hover-primary">Support</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none hover-primary">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h6 class="fw-bold mb-3">Stay Updated</h6>
+                    <p class="text-white-50">Subscribe to our newsletter for the latest updates.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Enter your email">
+                        <button class="btn btn-primary" type="button">
+                            <i class="bi bi-send"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 text-white-50">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 text-white-50">&copy; 2024 TechFlow. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white-50 text-decoration-none me-3 hover-primary">Privacy Policy</a>
+                    <a href="#" class="text-white-50 text-decoration-none hover-primary">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Form validation
+        (function() {
+            'use strict';
+            
+            const form = document.getElementById('contactForm');
+            
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+                event.stopPropagation();
+                
+                if (form.checkValidity()) {
+                    // Show success message
+                    alert('Thank you for your message! We\'ll get back to you soon.');
+                    form.reset();
+                    form.classList.remove('was-validated');
+                } else {
+                    form.classList.add('was-validated');
+                }
+            });
+        })();
+    </script>
+</body>
+</html>
